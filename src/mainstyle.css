@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.container-overview{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin-top: 35px;
+    height: 20rem;
+    border-radius: 20px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 1px 1px 28px -16px rgba(0,0,0,0.59);
+    -moz-box-shadow: 1px 1px 28px -16px rgba(0,0,0,0.59);
+    box-shadow: 1px 1px 28px -16px rgba(0,0,0,0.59);
+    transition: top ease 0.5s;
+    position: relative;
+    top: 0;
+}
+.container-overview:hover{
+    top: -8px;
+}
+.container-overview h4{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+}
+.container-overview h6{
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 1.2rem;
+}
+.container-overview-child-1{
+    flex-grow: 2;
+}
+.container-overview-child-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    flex-direction: column;
+}
+.container-overview-child-2 h1{
+    font-size: 150px;
+    color: #2D4059;
+}
+.container-more-overview{
+    background-color: #F2F2F2;
+    margin-top: 30px;
+    height: 8rem;
+    border-radius: 20px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    transition: top ease 0.5s;
+    position: relative;
+    top: 0;
+}
+.container-more-overview:hover{
+    top: -8px;
+}
+.container-more-overview .more-overview-title{
+    color: #A1A1A1;
+    font-size: 20px;
+    text-align: center;
+}
+.container-more-overview .more-overview-value{
+    color: #646464;
+    font-size: 25px;
+    text-align: center;
+}
+.charts-container{
+    margin-top: 35px;
+}
+.navbar{
+    height: 70px;
+}
+.navbar-brand{
+    font-size: 27px;
+}
