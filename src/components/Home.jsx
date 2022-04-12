@@ -48,7 +48,10 @@ function Home() {
     }
     
     const searchPlace = async () => {
-            const response = await fetchData(query.query.toString());
+
+            sessionStorage.setItem("local", query.query.toString());
+
+            const response = await fetchData(query.query.toString() || sessionStorage.getItem("local"));
             setName(response.data.name)
             setCountry(response.data.sys.country)
             setTemp((response.data.main.temp/10).toString().slice(0,4))
@@ -60,7 +63,7 @@ function Home() {
             setWeather(response.data.weather[0].main)
             setLon(response.data.coord.lon);
             setLat(response.data.coord.lat);        
-            const forecastresponse = await fetchForecastData(query.query.toString());
+            const forecastresponse = await fetchForecastData(query.query.toString() || sessionStorage.getItem("local"));
             //for 3 pm
             setfirsttemp(forecastresponse.data.list[0].main.temp/10)
             setfirsthum(forecastresponse.data.list[0].main.humidity)
