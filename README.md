@@ -1,4 +1,4 @@
-## IOT Smart Weather Monitoring System
+## iWeather - IOT Smart Weather Monitoring System
 - OpenWeather API
 - ReactJS
 - ChartJS
